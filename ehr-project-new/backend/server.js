@@ -16,3 +16,5 @@ app.get("/", (req, res) => {
 app.listen(5000, () => {
   console.log("Server running on port 5000");
 });
+const patientRoutes = require("./routes/patientRoutes"); 
+app.use("/api/patient", patientRoutes);
